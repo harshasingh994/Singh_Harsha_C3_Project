@@ -12,6 +12,7 @@ public class Restaurant {
     public LocalTime openingTime;
     public LocalTime closingTime;
     private List<Item> menu = new ArrayList<Item>();
+    private int orderCost =0;
 
     public Restaurant(String name, String location, LocalTime openingTime, LocalTime closingTime) {
         this.name = name;
@@ -64,6 +65,9 @@ public class Restaurant {
             throw new itemNotFoundException(itemName);
 
         menu.remove(itemToBeRemoved);
+    }
+    public int calculateOrderValue() throws itemNotFoundException {
+        return 0;
     }
     public void displayDetails(){
         System.out.println("Restaurant:"+ name + "\n"

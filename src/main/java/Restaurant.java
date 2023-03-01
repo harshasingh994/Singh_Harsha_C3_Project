@@ -67,7 +67,11 @@ public class Restaurant {
         menu.remove(itemToBeRemoved);
     }
     public int calculateOrderValue() throws itemNotFoundException {
-        return 0;
+
+        for(int i =0; i< menu.size(); i++){
+            orderCost = orderCost+ menu.get(i).getPrice();
+        }
+        return orderCost;
     }
     public void displayDetails(){
         System.out.println("Restaurant:"+ name + "\n"

@@ -68,6 +68,7 @@ class RestaurantTest {
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+    //<<<<<<<<<<<<<<<<<<<<<<<Calculate order value>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     @Test
     public void calculate_total_orderValue_to_388() throws itemNotFoundException {
         int totalOrderValue = restaurant.calculateOrderValue();
